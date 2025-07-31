@@ -64,7 +64,7 @@ public class ProductService {
         //1. Verificar la existencia del producto
         ProductEntity existencia = repo.findById(id).orElse(null);
         //2. Si el valor existe lo elimina
-        if (existencia != null){
+        if (existencia != null) {
             repo.deleteById(id);
             return true;
         }
