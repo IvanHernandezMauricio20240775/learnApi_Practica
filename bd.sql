@@ -49,6 +49,7 @@ CREATE TABLE Productos (
     fechaIngreso TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     idCategoria NUMBER NOT NULL,
     idUsuarioRegistro NUMBER NOT NULL,
+    IMAGEN_URL          VARCHAR2(120) NULL,
     CONSTRAINT fk_Productos_Categoria FOREIGN KEY (idCategoria) REFERENCES Categoria(idCategoria),
     CONSTRAINT fk_Productos_Usuario FOREIGN KEY (idUsuarioRegistro) REFERENCES Usuario(idUsuario)
 );
