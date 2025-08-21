@@ -13,12 +13,6 @@ import java.util.Set;
 @Configuration
 public class CloundinaryConfig {
 
-    private String cloudName;
-
-    private String apiKey;
-
-    private String apiSecret;
-
     @Bean
     public Cloudinary cloudinary(){
         Dotenv dotenv = Dotenv.load();
